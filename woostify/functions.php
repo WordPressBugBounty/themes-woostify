@@ -6,7 +6,7 @@
  */
 
 // Define constants.
-define( 'WOOSTIFY_VERSION', '2.4.8' );
+define( 'WOOSTIFY_VERSION', '2.4.9' );
 define( 'WOOSTIFY_PRO_MIN_VERSION', '1.7.2' );
 define( 'WOOSTIFY_THEME_DIR', get_template_directory() . '/' );
 define( 'WOOSTIFY_THEME_URI', get_template_directory_uri() . '/' );
@@ -37,12 +37,12 @@ if ( woostify_is_woocommerce_activated() ) {
 	require_once WOOSTIFY_THEME_DIR . 'inc/woocommerce/woostify-woocommerce-archive-product-functions.php';
 	require_once WOOSTIFY_THEME_DIR . 'inc/woocommerce/woostify-woocommerce-single-product-functions.php';
 	require_once WOOSTIFY_THEME_DIR . 'inc/woocommerce/woostify-woocommerce-query-update.php';
+	require_once WOOSTIFY_THEME_DIR . 'inc/admin/class-woostify-product-video.php';
 }
 
 // Woostify admin.
 require_once WOOSTIFY_THEME_DIR . 'inc/admin/class-woostify-admin.php';
 require_once WOOSTIFY_THEME_DIR . 'inc/admin/class-woostify-meta-boxes.php';
-require_once WOOSTIFY_THEME_DIR . 'inc/admin/class-woostify-product-video.php';
 
 // Compatibility.
 require_once WOOSTIFY_THEME_DIR . 'inc/compatibility/class-woostify-divi-builder.php';
