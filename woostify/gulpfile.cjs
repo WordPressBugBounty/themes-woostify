@@ -8,7 +8,7 @@
 
 let theme       = 'woostify',
 	site_name   = 'dev',
-	theme_ver   = '2.5.1',
+	theme_ver   = '2.5.2',
 	gulp        = require( 'gulp' ),
 	zip         = require( 'gulp-zip' ),
 	autoLoad    = require( 'gulp-load-plugins' )(),
@@ -142,6 +142,7 @@ let _minJs = ( done ) => {
 
 	done();
 }
+gulp.task( 'minjs', _minJs );
 
 // Zip task.
 let _zip = ( done ) => {
